@@ -16,7 +16,39 @@
     
 }
 
-.custom-btn-hover (@btnhoverbg, @btnhoverfont){
-    background-color:@btnhoverbg;
-    color: @bvtnhoverfont;
+.custom-btnMobile(@btn-bg-color, @btnwidth:100px, @btnfontcolor:@porcelain){
+    display: block;
+    background-color: @btn-bg-color;
+    width: @btnwidth;
+    max-width:500px;
+    height: 70px;
+    border-radius: 5px;
+    color:@btnfontcolor;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 25px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+//nav mixins
+.navadesktop() {
+    color:@river-bend;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    
+}
+
+.navdesktop() {
+    background:@nav-bg;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
