@@ -1,1 +1,22 @@
 // Mixins Here
+
+.custom-btn(@btn-bg-color, @btnwidth:100px, @btnfontcolor:@porcelain){
+    display: block;
+    background-color: @btn-bg-color;
+    width: @btnwidth;
+    height: 35px;
+    border-radius: 5px;
+    color:@btnfontcolor;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 9px;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.custom-btn-hover (@btnhoverbg, @btnhoverfont){
+    background-color:@btnhoverbg;
+    color: @bvtnhoverfont;
+}
